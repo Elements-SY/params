@@ -1,0 +1,13 @@
+﻿不管是params传参还是query传参它们各自都有几种方式传参。
+
+一是通过for循环遍历对象传参;
+
+一是通过JS点击事件获取路由把参数传过去，例如:
+
+this.$router.push({name: 'food',params: {mark: 666}})
+
+this.$router.push({path: '/food',query: {mark: 666}})
+
+一是通过点击路由标签例如:
+
+<router-link :to="{path:'/lens',query:{id:'适马'}}"><li>镜头</li></router-link>
