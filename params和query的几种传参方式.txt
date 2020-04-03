@@ -11,3 +11,7 @@ this.$router.push({path: '/food',query: {mark: 666}})
 一是通过点击路由标签例如:
 
 <router-link :to="{path:'/lens',query:{id:'适马'}}"><li>镜头</li></router-link>
+
+记住params做跳转的时候不能加path，因为它会覆盖name，优先选择path做跳转，
+
+此时你this.$route.params获取不到params传的属性

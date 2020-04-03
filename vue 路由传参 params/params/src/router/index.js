@@ -21,7 +21,7 @@ export default new Router({
       component: Index
     },
     {
-      path: '/books/:id',
+      path: '/books',
       name: 'books',
       component: Books
     },
@@ -35,6 +35,6 @@ export default new Router({
       name: 'food',
       component: Food
     },
-    
+
   ]
 })
